@@ -17,7 +17,7 @@ public class UserController {
     @RequestMapping(value="",method = RequestMethod.GET)
     public String hello() {
         System.out.println("用户名="+name);
-        return "Hello Spring-Boot 修改了哦~~~~~";
+        return "Hello Spring-Boot 修改了";
     }
 }
 
