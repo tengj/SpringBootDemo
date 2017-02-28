@@ -13,6 +13,7 @@ public class Chapter1Application {
 	public String index(){
 		return "Hello Spring Boot";
 	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(Chapter1Application.class, args);
 	}
