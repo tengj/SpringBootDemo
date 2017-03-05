@@ -33,6 +33,6 @@ public class UserController {
     public String hexo(){
         //return configBean.getName()+configBean.getWant();
         //return yearhope;
-        return configTestBean.getName()+configTestBean.getWant();
+        return configBean.getName()+configBean.getWant();
     }
 }
