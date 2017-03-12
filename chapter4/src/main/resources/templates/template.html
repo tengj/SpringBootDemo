@@ -1,0 +1,60 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]><html xmlns:th="http://www.thymeleaf.org" lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html xmlns:th="http://www.thymeleaf.org" lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html xmlns:th="http://www.thymeleaf.org" lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html xmlns:th="http://www.thymeleaf.org" lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns:th="http://www.thymeleaf.org" lang="en" class="no-js" > <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title></title>
+
+<!-- main JS libs -->
+<script src="../static/vanilla-cream-css/js/libs/modernizr.min.js" th:src="@{/vanilla-cream-css/js/libs/modernizr.min.js}"></script>
+<script src="../static/vanilla-cream-css/js/libs/jquery-1.10.0.js" th:src="@{/vanilla-cream-css/js/libs/jquery-1.10.0.js}"></script>
+<script src="../static/vanilla-cream-css/js/libs/jquery-ui.min.js" th:src="@{/vanilla-cream-css/js/libs/jquery-ui.min.js}"></script>
+<script src="../static/vanilla-cream-css/js/libs/bootstrap.min.js" th:src="@{/vanilla-cream-css/js/libs/bootstrap.min.js}"></script>
+
+<!-- Style CSS -->
+<link rel="stylesheet" href="../static/vanilla-cream-css/css/bootstrap.css" th:href="@{/vanilla-cream-css/css/bootstrap.css}" />
+<link rel="stylesheet" href="../static/vanilla-cream-css/style.css"  th:href="@{/vanilla-cream-css/style.css}"  />
+<!-- scripts -->
+<script src="../static/vanilla-cream-css/js/general.js" th:src="@{/vanilla-cream-css/js/general.js}"></script>
+
+<!-- Include all needed stylesheets and scripts here -->
+
+<!--[if lt IE 9]><script src="../static/vanilla-cream-css/js/respond.min.js" th:src="@{/vanilla-cream-css/js/respond.min.js}"></script><![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {filter: none !important;}
+</style>
+<![endif]-->
+</head>
+
+<body style="background-image: none;">
+    <div class="body_wrap">
+        <div class="container">
+            <div class="alert alert-success text-center" role="alert">Sptring Boot学习资源大奉送，爱我就关注嘟嘟公众号：嘟爷java超神学堂</div>
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <td>作者</td>
+                    <td>教程名称</td>
+                    <td>地址</td>
+                </tr>
+                <!--/*@thymesVar id="learnList" type=""*/-->
+                <tr th:each="learn : ${learnList}" class="text-info">
+                    <td th:text="${learn.author}">嘟嘟MD</td>
+                    <td th:text="${learn.title}">SPringBoot干货系列</td>
+                    <td><a href="#" th:href="${learn.url}" class="btn btn-search btn-green" target="_blank"><span>点我</span></a>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <!--/ container -->
+    </div>
+</body>
+</html>
