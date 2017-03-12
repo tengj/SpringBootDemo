@@ -13,7 +13,8 @@ Spring Boot学习系列
 
 建了一个群，有兴趣的可以进群来共同学习，来吧大兄弟~
 
-扫码加入：
+扫码加入：  
+
 ![](http://7xqch5.com1.z0.glb.clouddn.com/qqq.png)
 
 或者点击群链接：
