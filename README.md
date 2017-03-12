@@ -18,4 +18,4 @@ Spring Boot学习系列
 
 或者点击群链接：
 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=77f4f32b002df170c0110d8df42936f5e942c40e9e6f6c854dfcf36adebf9631">
-<img border="0" src="http//pub.idqqimg.com/wpa/images/group.png" alt="SpringBoot干货" title="SpringBoot干货"></a>
+<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="SpringBoot干货" title="SpringBoot干货"></a>
