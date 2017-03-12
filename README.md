@@ -20,3 +20,8 @@ Spring Boot学习系列
 或者点击群链接：
 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=77f4f32b002df170c0110d8df42936f5e942c40e9e6f6c854dfcf36adebf9631">
 <img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="SpringBoot干货" title="SpringBoot干货"></a>
+
+# 博主相关
+个人博客：[嘟嘟个人独立博客](http://tengj.top)  
+公众号：嘟爷java超神学堂（javaLearn）  
+头条号：[后端编程嘟](http://www.toutiao.com/m1559096720023553/)
