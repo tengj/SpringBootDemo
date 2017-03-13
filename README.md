@@ -14,7 +14,7 @@ Spring Boot学习系列
 建了一个群，有兴趣的可以进群来共同学习，来吧大兄弟~
 
 扫码加入：  
-![](https://7xqch5.com1.z0.glb.clouddn.com/qqq.png)
+![](http://7xqch5.com1.z0.glb.clouddn.com/qqq.png)
 
 或者点击群链接：
 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=77f4f32b002df170c0110d8df42936f5e942c40e9e6f6c854dfcf36adebf9631">
