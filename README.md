@@ -2,13 +2,12 @@
 Spring Boot学习系列
 
 # 博文对应源码
-- [Spring boot干货系列：（一）优雅的入门篇](http://www.jianshu.com/p/40bba318e8f3)：chapter1
-- [Spring Boot干货系列：（二）配置文件解析](http://www.jianshu.com/p/e552268e4a89)：chapter2
-- [Spring Boot干货系列：（三）启动原理解析](http://www.jianshu.com/p/a24b70de4937)
-- [Spring Boot干货系列：（四）开发Web应用之Thymeleaf篇](http://www.jianshu.com/p/4105029fcfca)：chapter4
-- [Spring Boot干货系列：（五）开发Web应用之JSP篇](http://www.jianshu.com/p/95a96f95bad4)：chapter5
-
-
+- [Spring boot干货系列：（一）优雅的入门篇](http://tengj.top/2017/02/26/springboot1/)：chapter1
+- [Spring Boot干货系列：（二）配置文件解析](http://tengj.top/2017/02/28/springboot2/)：chapter2
+- [Spring Boot干货系列：（三）启动原理解析](http://tengj.top/2017/03/09/springboot3/)
+- [Spring Boot干货系列：（四）开发Web应用之Thymeleaf篇](http://tengj.top/2017/03/13/springboot4/)：chapter4
+- [Spring Boot干货系列：（五）开发Web应用之JSP篇](http://tengj.top/2017/03/13/springboot5/)：chapter5
+- [Spring Boot干货系列：（六）静态资源和拦截器处理](http://tengj.top/2017/03/30/springboot6/)：chapter6
 # 交流探讨
 
 建了一个群，有兴趣的可以进群来共同学习，来吧大兄弟~
