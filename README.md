@@ -8,6 +8,7 @@ Spring Boot干货系列，分享学习中整理的一些笔记和源码
 - [Spring Boot干货系列：（五）开发Web应用之JSP篇](http://tengj.top/2017/03/13/springboot5/)：chapter5
 - [Spring Boot干货系列：（六）静态资源和拦截器处理](http://tengj.top/2017/03/30/springboot6/)：chapter6
 - [Spring Boot干货系列：（七）默认日志logback配置解析](http://tengj.top/2017/04/05/springboot7/):chapter7-1
+- [Spring Boot干货系列：（八）数据存储篇-SQL关系型数据库之JdbcTemplate的使用](http://tengj.top/2017/04/13/springboot8/):chapter8
 
 # 交流探讨
 
