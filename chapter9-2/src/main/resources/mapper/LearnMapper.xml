@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dudu.dao.LearnMapper">
+  <resultMap id="baseResultMap" type="com.dudu.domain.LearnResouce">
+    <id column="id" property="id" jdbcType="BIGINT"  />
+    <result column="author" property="author" jdbcType="VARCHAR"/>
+    <result column="title" property="title" jdbcType="VARCHAR"/>
+    <result column="url" property="url" jdbcType="VARCHAR"/>
+  </resultMap>
+
+  <sql id="baseColumnList" >
+    id, author, title,url
+  </sql>
+
+  <select id="queryLearnResouceList" resultMap="baseResultMap" parameterType="java.util.HashMap">
+    select
+    <include refid="baseColumnList" />
+    from learn_resource
+    <where>
+      1 = 1
+      <if test="author!= null and author !=''">
+        AND author like CONCAT(CONCAT('%',#{author,jdbcType=VARCHAR}),'%')
+      </if>
+      <if test="title != null and title !=''">
+        AND title like  CONCAT(CONCAT('%',#{title,jdbcType=VARCHAR}),'%')
+      </if>
+
+    </where>
+  </select>
+
+  <select id="queryLearnResouceById"  resultMap="baseResultMap" parameterType="java.lang.Long">
+    SELECT
+    <include refid="baseColumnList" />
+    FROM learn_resource
+    WHERE id = #{id}
+  </select>
+
+  <insert id="add" parameterType="com.dudu.domain.LearnResouce" >
+    INSERT INTO learn_resource (author, title,url) VALUES (#{author}, #{title}, #{url})
+  </insert>
+
+  <update id="update" parameterType="com.dudu.domain.LearnResouce" >
+    UPDATE learn_resource SET author = #{author},title = #{title},url = #{url} WHERE id = #{id}
+  </update>
+
+  <delete id="deleteByIds" parameterType="java.lang.String" >
+    DELETE FROM learn_resource WHERE id in
+    <foreach item="idItem" collection="array" open="(" separator="," close=")">
+      #{idItem}
+    </foreach>
+  </delete>
+
+
+
+</mapper>
