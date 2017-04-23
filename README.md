@@ -34,7 +34,8 @@ Spring Boot干货系列，分享学习中整理的一些笔记和源码
 
 随着我电子书收集归类越来越多，我会适当提高这个价格的，已购买的则完全享有这些服务，这份所有java程序员都需要的电子书，你还在犹豫吗？你不想比同事更有优势吗？你不觉得嘟爷很帅吗？  
 
-<div class="snspay-content" data-hashid="4MEZXPUW"></div><script src="https://sns.io/js/embed.js" charset="utf-8"></script>
+[点我扫码购买，不要停止向优秀前进的步伐！！！](https://sns.io/sell/4MEZXPUW)
+
 
 ![](http://7xqch5.com1.z0.glb.clouddn.com/dianzishu.png)
 
