@@ -1,0 +1,41 @@
+.showMsg{
+	width: 200px;
+	height: 0px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #e1e1e1;
+	margin: 0;
+	overflow: hidden;
+	display: none;
+	background: #FFFFFF
+}
+.showMsg .title{
+	width: 100%;
+	line-height: 20px;
+	background:  #e1e1e1;
+	border: 1px solid #e1e1e1;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12px;
+}
+.showMsg .con {
+	width: 100%;
+	font-weight: bold;
+	font-size: 12px;
+	color: #000000;
+	text-align: left;
+}
+.showMsg .con ul li{
+	text-align:left;
+	list-style-type:none;
+	margin-left:-20px;
+
+}
+.showMsg .close {
+	position: absolute;
+	right: 3px;
+	top: 4px;
+	color: black;
+	cursor: pointer
+}
