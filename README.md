@@ -11,6 +11,9 @@ Spring Boot干货系列，分享学习中整理的一些笔记和源码
 - [Spring Boot干货系列：（八）数据存储篇-SQL关系型数据库之JdbcTemplate的使用](http://tengj.top/2017/04/13/springboot8/):chapter8
 - [Spring Boot干货系列：（九）数据存储篇-SQL关系型数据库之MyBatis的使用](http://tengj.top/2017/04/23/springboot9/):chapter9,chapter9-2
 - [Spring Boot干货系列：（十）开发常用的热部署方式汇总](http://tengj.top/2017/06/01/springboot10/)
+- [Spring Boot干货系列：（十）开发常用的热部署方式汇总](http://tengj.top/2017/06/01/springboot10/)
+- [Spring Boot干货系列：（十一）数据存储篇-Spring Boot整合Mybatis通用Mapper插件](http://tengj.top/2017/12/20/springboot11/)
+
 # 交流探讨
 
 建了一个群，有兴趣的可以进群来共同学习，来吧大兄弟~
