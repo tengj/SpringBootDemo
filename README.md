@@ -13,6 +13,7 @@ Spring Boot干货系列，分享学习中整理的一些笔记和源码
 - [Spring Boot干货系列：（十）开发常用的热部署方式汇总](http://tengj.top/2017/06/01/springboot10/)
 - [Spring Boot干货系列：（十）开发常用的热部署方式汇总](http://tengj.top/2017/06/01/springboot10/)
 - [Spring Boot干货系列：（十一）数据存储篇-Spring Boot整合Mybatis通用Mapper插件](http://tengj.top/2017/12/20/springboot11/)
+- [Spring Boot干货系列：（十二）Spring Boot使用单元测试](http://tengj.top/2017/12/28/springboot12/)
 
 # 交流探讨
 
