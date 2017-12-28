@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dudu.dao.LearnResourceMapper">
+  <resultMap id="BaseResultMap" type="com.dudu.domain.LearnResource">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+  </resultMap>
+    <select id="queryLearnResouceList" resultType="com.dudu.domain.LearnResource">
+      SELECT * from learn_resource where 1=1
+      <if test="author != null and author!= ''">
+        and author like CONCAT('%',#{author},'%')
+      </if>
+      <if test="title != null and title!= ''">
+        and title like CONCAT('%',#{title},'%')
+      </if>
+      order by id desc
+    </select>
+</mapper>
