@@ -1,0 +1,78 @@
+		.btn-nav-wrap {
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+		    overflow: auto;
+		    background-color: #fbfbfb;
+		    border-bottom: 1px solid #eee;
+		    padding: 9px 0 5px;
+		    font-family: 'Microsoft Yahei'
+		}
+		.btn-nav-list {
+			padding: 0 20px 0 40px;
+			overflow: hidden;
+		}
+		
+		.btn-nav-list .btn-nav-item {
+		    float: left;
+		    width: 13.1%;
+		    border-radius: 4px;
+		    border: 1px solid #f0b224;
+		    margin-right: 10px;
+		    list-style: none;
+		    height: 46px;
+		    line-height: 46px;
+		    background-color: #fff;
+		    text-align: center;
+		   
+		}
+		
+		.btn-nav-item a {
+		    color: #999;
+		    display: block;
+		    text-decoration: none;
+		}
+		
+		.btn-nav-item.active a {
+		    color: #f0b224;
+		}
+
+		.top-select-color {
+			color: #fe8943;
+		}
+		
+		.btn-nav-item a span {
+		    padding-left: 26px;
+		    line-height: 46px;
+		    display: inline-block;
+		    background-repeat: no-repeat;
+		    background-position: left center;
+		}
+
+		.nav-item-icon-0 {
+		    background-image: url('../img/icon/icon-cyfp-nav-0.png');
+		}
+		
+		.nav-item-icon-1 {
+		    background-image: url('../img/icon/icon-cyfp-nav-1.png');
+		}
+		
+		.nav-item-icon-2 {
+		    background-image: url('../img/icon/icon-cyfp-nav-2.png');
+		}
+		
+		.nav-item-icon-3 {
+		    background-image: url('../img/icon/icon-cyfp-nav-3.png');
+		}
+		
+		.nav-item-icon-4 {
+		    background-image: url('../img/icon/icon-cyfp-nav-4.png');
+		}
+		
+		.nav-item-icon-5 {
+		    background-image: url('../img/icon/icon-cyfp-nav-5.png');
+		}
+		
+		.nav-item-icon-6 {
+		    background-image: url('../img/icon/icon-cyfp-nav-6.png');
+		}

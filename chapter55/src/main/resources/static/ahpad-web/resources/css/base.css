@@ -1,0 +1,255 @@
+﻿/*------- reset ------*/
+
+@charset "utf-8";
+
+/* --Elements-- */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+lable,
+textarea,
+p,
+blockquote,
+img,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+img {
+    border: none;
+    float: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+dt,
+dd,
+li {
+    position: relative;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font: 12px 'Microsoft YaHei' Verdana, Arial, Helvetica, sans-serif;
+    color: #42515A;
+
+}
+
+select,
+input {
+    vertical-align: middle;
+    padding: 1px 0;
+}
+
+/*label {
+    cursor: hand;
+}*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table th {
+    text-align: center;
+}
+
+q:before,
+q:after {
+    content: "";
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+/* --Link Styles-- */
+a {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #ff3300;
+    text-decoration: underline;
+}
+
+.red,
+a.red:link,
+a.red:visited {
+    color: #f54100;
+}
+/*内页桔红色字体*/
+
+.black,
+a.black:link,
+a.black:visited {
+    color: #000;
+}
+
+.white,
+a.white:link,
+a.white:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.white:hover {
+    color: #ff0;
+}
+
+.blue,
+a.blue:link,
+a.blue:visited {
+    color: #004b8b;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+button {
+    outline: 0;
+    _blr: expression(this.onFocus=this.blur());
+}
+/*去除边框虚线*/
+
+.hide {
+    display: none;
+}
+
+.visib {
+    visibility: hidden;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+body .border-none {
+    border: none;
+}
+
+.border {
+    border: 1px solid #eee;
+}
+
+
+/*块状元素水平居中*/
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*清除浮动*/
+.fix {
+    *zoom: 1;
+}
+
+.fix:after {
+    display: block;
+    content: "clear";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+/*单行文字溢出虚点显示*/
+.ell {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*红色标记*/
+.mark {
+    font-weight: bold;
+    color: #f00;
+}
+
+/*字符型图标样式*/
+.symbol {
+    font-size: 14px;
+    font-weight: bold;
+    color: #06c;
+}
+
