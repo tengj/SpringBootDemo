@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout">
+<head>
+    <title>Spring Boot管理后台</title>
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+    <div style="padding-left: 20px;"  id="navbar">
+        <h1>系统异常统一处理</h1>
+        <h3 th:text="'错误信息：'+${msg}"></h3>
+        <h3 th:text="'请求地址：'+${url}"></h3>
+
+        <h2>Debug</h2>
+        <a th:href="@{'https://www.google.com/webhp?hl=zh-CN#safe=strict&hl=zh-CN&q='+${msg}}"
+           class="btn btn-primary btn-lg" target="_blank" id="Google">Google</a>
+        <a th:href="@{'https://www.baidu.com/s?wd='+${msg}}" class="btn btn-info btn-lg"  target="_blank" id="Baidu">Baidu</a>
+        <a th:href="@{'http://stackoverflow.com/search?q='+${msg}}"
+           class="btn btn-default btn-lg"  target="_blank" id="StackOverFlow">StackOverFlow</a>
+        <h2>异常堆栈跟踪日志StackTrace</h2>
+        <div th:each="line:${stackTrace}">
+            <div th:text="${line}"></div>
+        </div>
+    </div>
+</div>
+<div layout:fragment="js" th:remove="tag">
+</div>
+</body>
+</html>
