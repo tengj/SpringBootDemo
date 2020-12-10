@@ -1,0 +1,14 @@
+17:51:01.590 logback [main] INFO  com.dudu.Application - Starting Application using Java 1.8.0_271 on smart-PC with PID 32085 (/media/smart/377F3B312C263A87/项目/SpringBootDemo/chapter7-1/target/classes started by smart in /media/smart/377F3B312C263A87/项目/SpringBootDemo/chapter7-1)
+17:51:01.592 logback [main] INFO  com.dudu.Application - No active profile set, falling back to default profiles: default
+17:51:02.104 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:51:02.109 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:51:02.110 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:51:02.110 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+17:51:02.147 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:51:02.147 logback [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 523 ms
+17:51:02.367 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:51:02.376 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:51:02.383 logback [main] INFO  com.dudu.Application - Started Application in 1.132 seconds (JVM running for 1.461)
+17:51:09.611 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:51:09.611 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:51:09.612 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms

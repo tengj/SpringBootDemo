@@ -1,6 +1,7 @@
 package com.dudu.interceptor;
 
 import com.dudu.domain.User;
+import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -12,6 +13,7 @@ import java.lang.reflect.Method;
 /**
  * Created by tengj on 2017/3/29.
  */
+@Component
 public class MyInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
