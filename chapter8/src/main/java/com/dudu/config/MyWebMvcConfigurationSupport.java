@@ -4,6 +4,7 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.dudu.interceptor.MyInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -20,9 +21,15 @@ import java.util.List;
 @Configuration
 public class MyWebMvcConfigurationSupport extends WebMvcConfigurationSupport {
 
+    @Autowired
+    MyInterceptor myInterceptor;
+
     private static final String[] CLASSPATH_RESOURCE_LOCATIONS = {
-            //"classpath:/META-INF/resources/", "classpath:/resources/",
-            "classpath:/static/", "classpath:/public/"
+            "classpath:/META-INF/resources/",
+            "classpath:/resources/",
+            "classpath:/static/assets/",
+            "classpath:/static/",
+            "classpath:/public/"
     };
 
     /**
@@ -52,13 +59,14 @@ public class MyWebMvcConfigurationSupport extends WebMvcConfigurationSupport {
 
     /**
      * 拦截器
+     *
      * @param registry
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // addPathPatterns 用于添加拦截规则
         // excludePathPatterns 用户排除拦截
-        registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns("/toLogin","/login");
+        registry.addInterceptor(myInterceptor).addPathPatterns("/**").excludePathPatterns("/toLogin", "/login", "/assets");
         super.addInterceptors(registry);
     }
 
