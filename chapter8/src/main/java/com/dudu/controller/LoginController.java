@@ -1,6 +1,6 @@
 package com.dudu.controller;
 
-import com.dudu.domain.User;
+import com.dudu.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

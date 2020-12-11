@@ -1,4 +1,4 @@
-package com.dudu.domain;
+package com.dudu.model;
 
 /**
  * Created by tengj on 2017/3/7.

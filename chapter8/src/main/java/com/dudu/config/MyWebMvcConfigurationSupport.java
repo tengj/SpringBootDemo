@@ -10,6 +10,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 import java.util.List;
 
@@ -17,8 +18,12 @@ import java.util.List;
  * Created by tengj on 2017/3/13.
  */
 @Configuration
-public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
+public class MyWebMvcConfigurationSupport extends WebMvcConfigurationSupport {
 
+    private static final String[] CLASSPATH_RESOURCE_LOCATIONS = {
+            //"classpath:/META-INF/resources/", "classpath:/resources/",
+            "classpath:/static/", "classpath:/public/"
+    };
 
     /**
      * 配置静态访问资源
@@ -29,7 +34,7 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
         //自定义项目内目录
         //registry.addResourceHandler("/my/**").addResourceLocations("classpath:/my/");
         //指向外部目录
-        registry.addResourceHandler("/my/**").addResourceLocations("file:E:/my/");
+        registry.addResourceHandler("/**").addResourceLocations(CLASSPATH_RESOURCE_LOCATIONS);
         super.addResourceHandlers(registry);
     }
 
