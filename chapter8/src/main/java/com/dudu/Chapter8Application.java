@@ -10,17 +10,17 @@ import org.springframework.core.env.Environment;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-public class Application {
+public class Chapter8Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(Chapter8Application.class, args);
 	}
 
 	@Autowired
 	private Environment env;
 
 	//destroy-method="close"的作用是当数据库连接不使用的时候,就把该连接重新放到数据池中,方便下次使用调用.
-	@Bean(destroyMethod =  "close")
+	@Bean(destroyMethod = "close")
 	public DataSource dataSource() {
 		DruidDataSource dataSource = new DruidDataSource();
 		dataSource.setUrl(env.getProperty("spring.datasource.url"));

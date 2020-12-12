@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.dudu</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>chapter4</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>webThymeleaf</name>
+	<name>chapter4</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
