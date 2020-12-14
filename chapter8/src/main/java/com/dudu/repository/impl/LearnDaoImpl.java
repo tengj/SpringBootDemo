@@ -1,7 +1,7 @@
-package com.dudu.dao.impl;
+package com.dudu.repository.impl;
 
-import com.dudu.dao.LearnDao;
-import com.dudu.domain.LearnResouce;
+import com.dudu.repository.LearnDao;
+import com.dudu.model.LearnResouce;
 import com.dudu.tools.Page;
 import com.dudu.tools.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * Created by tengj on 2017/4/8.
  */
-@Repository
+@Repository("LearnDaoImpl")
 public class LearnDaoImpl  implements LearnDao{
     @Autowired
     private JdbcTemplate jdbcTemplate;

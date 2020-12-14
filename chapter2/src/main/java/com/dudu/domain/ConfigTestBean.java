@@ -25,7 +25,7 @@ public class ConfigTestBean {
     }
 
     public String getWant() {
-        return want;
+        return want+"sss";
     }
 
     public void setWant(String want) {

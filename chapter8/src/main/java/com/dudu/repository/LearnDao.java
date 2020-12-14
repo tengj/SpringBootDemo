@@ -1,6 +1,6 @@
-package com.dudu.dao;
+package com.dudu.repository;
 
-import com.dudu.domain.LearnResouce;
+import com.dudu.model.LearnResouce;
 import com.dudu.tools.Page;
 
 import java.util.Map;
