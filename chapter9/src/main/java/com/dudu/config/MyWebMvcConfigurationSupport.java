@@ -10,6 +10,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 import java.util.List;
 
@@ -17,7 +18,7 @@ import java.util.List;
  * Created by tengj on 2017/3/13.
  */
 @Configuration
-public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
+public class MyWebMvcConfigurationSupport extends WebMvcConfigurationSupport {
 
 
     /**
