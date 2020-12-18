@@ -152,17 +152,25 @@
 <!--				<groupId>org.mybatis.generator</groupId>-->
 <!--				<artifactId>mybatis-generator-maven-plugin</artifactId>-->
 <!--				<version>1.3.5</version>-->
+<!--				<configuration>-->
+<!--					&lt;!&ndash;允许移动生成的文件&ndash;&gt;-->
+<!--					<verbose>true</verbose>-->
+<!--					&lt;!&ndash;是否覆盖&ndash;&gt;-->
+<!--					<overwrite>true</overwrite>-->
+<!--					&lt;!&ndash;自动生成的配置&ndash;&gt;-->
+<!--					<configurationFile>src/main/resources/mybatis-generator.xml</configurationFile>-->
+<!--				</configuration>-->
 <!--				<dependencies>-->
 <!--					&lt;!&ndash;配置这个依赖主要是为了等下在配置mybatis-generator.xml的时候可以不用配置classPathEntry这样的一个属性，避免代码的耦合度太高&ndash;&gt;-->
 <!--					<dependency>-->
 <!--						<groupId>mysql</groupId>-->
 <!--						<artifactId>mysql-connector-java</artifactId>-->
-<!--						<version>5.1.44</version>-->
+<!--						<version>8.0.22</version>-->
 <!--					</dependency>-->
 <!--					<dependency>-->
 <!--						<groupId>tk.mybatis</groupId>-->
 <!--						<artifactId>mapper</artifactId>-->
-<!--						<version>3.4.0</version>-->
+<!--						<version>3.4.4</version>-->
 <!--					</dependency>-->
 <!--				</dependencies>-->
 <!--				<executions>-->
@@ -174,14 +182,6 @@
 <!--						</goals>-->
 <!--					</execution>-->
 <!--				</executions>-->
-<!--				<configuration>-->
-<!--					&lt;!&ndash;允许移动生成的文件&ndash;&gt;-->
-<!--					<verbose>true</verbose>-->
-<!--					&lt;!&ndash;是否覆盖&ndash;&gt;-->
-<!--					<overwrite>true</overwrite>-->
-<!--					&lt;!&ndash;自动生成的配置&ndash;&gt;-->
-<!--					<configurationFile>src/main/resources/mybatis-generator.xml</configurationFile>-->
-<!--				</configuration>-->
 <!--			</plugin>-->
 		</plugins>
 	</build>
