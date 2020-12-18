@@ -52,7 +52,7 @@ public class LearnController  extends AbstractController{
     @ResponseBody
     public AjaxObject addLearn(@RequestBody LearnResource learn){
         learnService.save(learn);
-        return AjaxObject.ok();
+        return AjaxObject.ok("新增成功");
     }
 
     /**
@@ -63,7 +63,7 @@ public class LearnController  extends AbstractController{
     @ResponseBody
     public AjaxObject updateLearn(@RequestBody LearnResource learn){
         learnService.updateNotNull(learn);
-        return AjaxObject.ok();
+        return AjaxObject.ok("编辑成功");
     }
 
     /**
@@ -74,6 +74,6 @@ public class LearnController  extends AbstractController{
     @ResponseBody
     public AjaxObject deleteLearn(@RequestBody Long[] ids){
         learnService.deleteBatch(ids);
-        return AjaxObject.ok();
+        return AjaxObject.ok("删除成功");
     }
 }

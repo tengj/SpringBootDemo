@@ -10,10 +10,10 @@ import javax.sql.DataSource;
 
 
 @SpringBootApplication
-public class Application {
+public class Chapter9_2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(Chapter9_2Application.class, args);
 	}
 
 	@Autowired
