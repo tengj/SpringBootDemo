@@ -15,14 +15,14 @@ import javax.sql.DataSource;
 //启注解事务管理
 @EnableTransactionManagement  // 启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
 @MapperScan(basePackages = "com.dudu.dao", markerInterface = MyMapper.class)
-public class Application  extends SpringBootServletInitializer {
+public class Chapter11Application  extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(Application.class);
+		return application.sources(Chapter11Application.class);
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(Chapter11Application.class, args);
 	}
 }
