@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[[${status}]]</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body >
+<div class="m-5" >
+    <p>错误码：[[${status}]]</p>
+    <p >信息：[[${message}]]</p>
+    <p >时间：[[${#dates.format(timestamp,'yyyy-MM-dd hh:mm:ss ')}]]</p>
+    <p >请求路径：[[${path}]]</p>
+</div>
+
+</body>
+</html>

@@ -3,6 +3,7 @@ package com.dudu.controller;
 import com.dudu.domain.LearnResouce;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -39,7 +40,8 @@ public class LearnResourceController {
         learnList.add(bean);
         bean =new LearnResouce("林祥纤博客系列","从零开始学Spring Boot ","http://412887952-qq-com.iteye.com/category/356333");
         learnList.add(bean);
-        ModelAndView modelAndView = new ModelAndView("/index");
+        ModelAndView modelAndView = new ModelAndView("index");
+        System.out.println(learnList);
         modelAndView.addObject("learnList", learnList);
         return modelAndView;
     }
@@ -68,7 +70,8 @@ public class LearnResourceController {
         learnList.add(bean);
         bean =new LearnResouce("林祥纤博客系列","从零开始学Spring Boot ","http://412887952-qq-com.iteye.com/category/356333");
         learnList.add(bean);
-        ModelAndView modelAndView = new ModelAndView("/template");
+        ModelAndView modelAndView = new ModelAndView("template");
+        System.out.println(learnList);
         modelAndView.addObject("learnList", learnList);
         return modelAndView;
     }

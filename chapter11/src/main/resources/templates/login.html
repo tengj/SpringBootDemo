@@ -8,11 +8,8 @@
 <link rel="stylesheet" href="../static/assets/css/jq22.css"  th:href="@{/assets/css/jq22.css}"  />
 <link rel="stylesheet" href="../static/assets/css/font-awesome.min.css" th:href="@{/assets/css/font-awesome.min.css}"/>
 <script src="../static/assets/js/jquery-1.10.2.min.js" th:src="@{/assets/js/jquery-1.10.2.min.js}"></script>
-<script src="../static/assets/js/bootstrap.min.js" th:src="@{/assets/js/bootstrap.min.js}"></script>
+    <script src="../static/assets/js/bootstrap.min.js" th:src="@{/assets/js/bootstrap.min.js}"></script>
 <script src="../static/assets/js/jquery.messager.js" th:src="@{/assets/js/jquery.messager.js}"></script>
-    <script th:inline="javascript">
-        var baseURL = [[${ctx}]];
-    </script>
     <script type="text/javascript">
         $(function() {
             $('#login #password').focus(function() {
@@ -25,7 +22,7 @@
             $("#doLogin").click(function (e) {
                 $.ajax({
                     type : "POST",
-                    url : baseURL+"login",
+                    url : "/login",
                     data : {
                         "userName" : $("#userName").val(),
                         "password" : $("#password").val()
@@ -33,7 +30,7 @@
                     dataType : "json",
                     success : function(data) {
                         if (data.result == "1") {
-                            window.location.href =baseURL+"index";
+                            window.location.href ="/index";
                         } else {
                             $.messager.alert("提示",'账号密码不能为空！');
                         }
